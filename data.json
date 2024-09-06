@@ -1,0 +1,175 @@
+import SmallerLambo from "./src/assets/smaller lambo.png"
+import RollsRoyce from 
+import AllNewRush from 
+import Crv from 
+import AllNewTerios from 
+import Exclusice from 
+import Mgzs from 
+import SmallerPorsche from 
+import BlackCrv from 
+
+
+
+export const productData = [
+    {
+        "productId" : "1",
+        "name": "Koengisegg",
+        "price": 99,
+        "category": "Sport",
+        "carType": "Manual",
+        "carSpace": 2,
+        "carTankCapacity": 90,
+        "carImg": "./src/assets/smaller lambo.png",
+        "isFavourite": true,
+        "sold": 50
+
+    },
+    {
+        "productId" : "2",
+        "name": "Nissan GT-R",
+        "price": 80,
+        "category": "Sport",
+        "carType": "Manual",
+        "carSpace": 2,
+        "carTankCapacity": 80,
+        "carImg": "./src/assets/smaller porsche.png",
+        "count": 70,
+        "isFavourite": false,
+        "prevPrice": true,
+        "oldPrice": 100,
+        "sold": 70
+
+    },
+    {
+        "productId" : "3",
+        "name": "Rolls-Royce",
+        "price": 96,
+        "category": "Sedan",
+        "carType": "Manual",
+        "carSpace": 4,
+        "carTankCapacity": 70,
+        "carImg": "./src/assets/rollsroyce.png",
+        "count": 90,
+        "isFavourite": true,
+        "sold": 70
+
+    },
+    {
+        "productId" : "4",
+        "name": "All New Rush",
+        "price": 72,
+        "prevPrice": true,
+        "oldPrice": 80,
+        "category": "Suv",
+        "carType": "Manual",
+        "carSpace": 6,
+        "carTankCapacity": 70,
+        "carImg": "./src/assets/allnewrush.png",
+        "count": 60,
+        "sold": 50,
+        "isFavourite": false
+
+    },
+    {
+        "productId" : "5",
+        "name": "CR-V",
+        "price": 80,
+        "category": "Suv",
+        "carType": "Manual",
+        "carSpace": 6,
+        "carTankCapacity": 80,
+        "carImg": "./src/assets/cr-v.png",
+        "count": 90,
+        "sold": 20,
+        "isFavourite": true
+
+    },
+    {
+        "productId" : "6",
+        "name": "All New Terios",
+        "price": 74,
+        "category": "Suv",
+        "carType": "Manual",
+        "carSpace": 6,
+        "carTankCapacity": 90,
+        "carImg": "./src/assets/allnewterios.png",
+        "count": 50,
+        "sold": 10,
+        "isFavourite": false
+
+    },
+    {
+        "productId" : "7",
+        "name": "CR-V",
+        "price": 80,
+        "category": "Suv",
+        "carType": "Manual",
+        "carSpace": 6,
+        "carTankCapacity": 80,
+        "carImg": "./src/assets/cr-v black.png",
+        "count": 90,
+        "sold": 20,
+        "isFavourite": true
+        
+    },
+    {
+        "productId" : "8",
+        "name": "Mg Zx Exclusice",
+        "price": 76,
+        "prevPrice": true,
+        "oldPrice": 80,
+        "category": "Hatchback",
+        "carType": "Manual",
+        "carSpace": 4,
+        "carTankCapacity": 70,
+        "carImg": "./src/assets/mg xz exclusice.png",
+        "count": 40,
+        "sold": 20,
+        "isFavourite": true
+
+    },
+    {
+        "productId" : "9",
+        "name": "New MG ZS",
+        "price": 80,
+        "category": "Suv",
+        "carType": "Manual",
+        "carSpace": 6,
+        "carTankCapacity": 80,
+        "carImg": "./src/assets/mg zs.png",
+        "count": 30,
+        "sold": 40,
+        "isFavourite": false
+
+    },
+    {
+        "productId" : "10",  
+        "name": "Mg Zx Excite",
+        "price": 74,
+        "prevPrice": true,
+        "oldPrice": 80,
+        "category": "Hatchback",
+        "carType": "Manual",
+        "carSpace": 4,
+        "carTankCapacity": 90,
+        "carImg": "./src/assets/mg xz exclusice.png",
+        "count": 40,
+        "sold": 20,
+        "isFavourite": true
+
+    },
+    {
+        "productId" : "11",
+        "name": "New MG ZS",
+        "price": 80,
+        "category": "Suv",
+        "carType": "Manual",
+        "carSpace": 6,
+        "carTankCapacity": 80,
+        "carImg": "./src/assets/mg zs.png",
+        "count": 30,
+        "sold": 40,
+        "isFavourite": false
+
+    }
+]
