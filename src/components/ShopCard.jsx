@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 import { useState } from "react"
 
 const cardImgStyle = {
-  height: "120px",
+  height: "160px",
   width: "100%",
   overflow: "hidden",
   marginTop: "10px"
@@ -34,14 +34,12 @@ const ShopCard = ({ cardData }) => {
 
 
 
-  // const singleData = (item) => {
-  //   navigate(`/`)
-  // }
+
 
   return (
     // 
       <div className='card shadow rounded-3 pb-2' >
-        <Link to={`/detail/${cardData.id}`}>
+        
         <div className="card-title pt-4 ps-4 ">
           <div className='d-flex justify-content-between '>
             <h4 className="fw-bold">{cardData.name}</h4>
@@ -52,10 +50,13 @@ const ShopCard = ({ cardData }) => {
             </button>
           </div>
           <small className='text-muted'>{cardData.category}</small>
-        </div>
+      </div>
+      <Link to={`/detail/${cardData.productId}`}>
         <div className="card-img text-center py-4 " style={cardImgStyle}>
           <img src={cardData.carImg} alt="" className="w-75 h-auto" />
         </div>
+      </Link>
+        
         <div className="card-body d-flex justify-content-evenly text-muted align-content-center">
           <span className='pe-2'><BsFuelPumpFill className="pe-1" size="20px" color="grey" /> {cardData.carTankCapacity}</span>
           <span className="pe-2"><TbSteeringWheel className="" size="20px" color="grey" /> {cardData.carType}</span>
@@ -71,13 +72,13 @@ const ShopCard = ({ cardData }) => {
 
 
           </div>
-          <div>
-            <button className="btn btn-primary ms-4 rounded-1" >Rent Now</button>
+        <div>
+            <Link to={`/detail/${cardData.productId}`} className="btn btn-primary ms-4 rounded-1" >Rent Now</Link>
           </div>
 
         </div>
 
-        </Link>
+        
       </div>
     // </Link>
 

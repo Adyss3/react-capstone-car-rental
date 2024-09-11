@@ -3,7 +3,7 @@ import RangeSlider from './RangeSlider'
 
 const SideBar = () => {
     return (
-        <div >
+        <div className='w-100'>
             <div className='py-4'>
                 <small className='text-muted '>TYPE</small>
             </div>
@@ -73,11 +73,6 @@ const SideBar = () => {
 
             <div className="py-2">
                 <RangeSlider/>
-                {/* <input type="range" step="10" min="0" max="100" className='w-100'/>
-                <div>
-                    <span>Max.<span id="rangePrimary" ></span> $</span>
-
-                </div> */}
             </div>
         </div>
     )

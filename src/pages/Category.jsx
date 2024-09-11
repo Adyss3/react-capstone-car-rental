@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from "../components/NavBar"
 import Section from "../components/Section"
 import PickUp from "../components/PickUp"
@@ -12,11 +12,14 @@ const Category = () => {
 
   const [productData, setProductData] = useState([])
 
-  fetch("/data.json")
-    .then(res => res.json())
-    .then(data => setProductData(data))
-    .catch(err => console.log(err))
+  
 
+  useEffect(() => {
+    fetch("/data.json")
+      .then(res => res.json())
+      .then(data => setProductData(data))
+      .catch(err => console.log(err))
+  },[])
 
 
   return (
@@ -25,7 +28,7 @@ const Category = () => {
         <Navbar />
       </div>
       <div className="pt-1 d-flex bg-white">
-        <div className="d-lg-block  ps-1  d-none pad">
+        <div className="d-lg-block d-none w-25 px-4">
           <SideBar />
         </div>
         <div className='bg-light container '>

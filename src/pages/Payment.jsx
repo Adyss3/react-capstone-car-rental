@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import NavBar from '../components/NavBar';
 import Billing from "../form/Billing"
 import RentalInfo from '../form/RentalInfo'
@@ -6,30 +6,26 @@ import PaymentForm from "../form/PaymentForm"
 import Cart from "../components/Cart"
 import Secure from "../assets/secure img.png"
 import Footer from "../components/Footer"
+import { useParams } from 'react-router-dom';
 
 
 
 const Payment = () => {
-  // const [billingData, setBillingData] = useState({
-  //   name: "",
-  //   phoneNumber: "",
-  //   address: "",
-  //   city: "",
-  // });
-  // const [paymentInfoData, setPaymentInfoData] = useState("creditCard");
+  const [productData, setProductData] = useState([])
 
-
-  // const handlePaymentChange = (e) => {
-  //   setPaymentInfoData(e.target.value);
-  // }
+  const params = useParams();
+  const cartData = productData && productData.length > 0 && productData.find(p => String(p.productId) === params.id)
 
 
 
+  useEffect(() => {
+    fetch("/data.json")
+      .then(res => res.json())
+      .then(data => setProductData(data))
+      .catch(err => console.log(err))
+  }, [])
 
-  // const handleBillingData = (e) => {
-  //   const { name, value } = e.target;
-  //   setBillingData({ ...billingData, [name]: value })
-  // }
+
 
   const submit = (e) => {
     e.preventDefault();
@@ -58,7 +54,7 @@ const Payment = () => {
 
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-8 py-3">
+          <div className="col-lg-8 py-3">
             <form action="" onSubmit={submit}>
               {/* step 1  */}
               <Billing />
@@ -110,16 +106,14 @@ const Payment = () => {
           </div>
 
           {/* Cart */}
-          <div className="col-md-4 py-3 ">
-            <Cart />
-
-
+          <div className="col-lg-4 py-3 ">
+            <Cart cartData={cartData} />
           </div>
         </div>
 
       </div>
       <div className="container-fluid bg-white">
-        <Footer/>
+        <Footer />
       </div>
 
 

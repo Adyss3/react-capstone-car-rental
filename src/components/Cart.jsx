@@ -4,9 +4,8 @@ import { TiStarFullOutline, TiStarOutline } from 'react-icons/ti';
 
 
 
-const Cart = () => {
+const Cart = ({ cartData }) => {
     const [promoCode, setPromoCode] = useState("")
-
 
     const handlePromoCode = (e) => {
         setPromoCode(e.target.value)
@@ -20,10 +19,10 @@ const Cart = () => {
             </div>
             <div className="py-4 d-flex gap-3">
                 <div className='shadow rounded-3 bg-primary text-center py-4 px-2 w-25 h-25  align-content-center'>
-                    <img src={SmallerPorsche} alt="" className='w-100 px-1 ' />
+                    <img src={cartData.carImg} alt="" className='w-100 px-1 ' />
                 </div>
                 <div className='align-content-center'>
-                    <span className='fw-bolder fs-3'>NISSAN GT-R</span><br />
+                    <span className='fw-bolder fs-3'>{cartData.name}</span><br />
                     <div className=''>
                         <TiStarFullOutline size="20px" color='yellow' />
                         <TiStarFullOutline size="20px" color='yellow' />
@@ -38,7 +37,7 @@ const Cart = () => {
                 <hr className='border-3 border-light-subtle' />
                 <div className="d-flex justify-content-between">
                     <p>Subtotal</p>
-                    <p>$80.00</p>
+                    <p>${Number(cartData.price).toFixed(2)}</p>
                 </div>
                 <div className="d-flex justify-content-between">
                     <p>Tax</p>
@@ -57,7 +56,7 @@ const Cart = () => {
                         <span className='small'>Overall price and includes rental discount</span>
                     </div>
                     <div className='align-content-center'>
-                        <p className='fs-3 fw-bolder'>$80.00</p>
+                        <p className='fs-3 fw-bolder'>${Number(cartData.price).toFixed(2)}</p>
                     </div>
                 </div>
             </div>

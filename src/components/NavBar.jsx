@@ -7,6 +7,11 @@ import { FaBell } from "react-icons/fa"
 import { FaGear } from "react-icons/fa6"
 import profile from "../assets/Profil.png"
 import Toggler from "./Toggler"
+import Filter from "./Filter"
+
+const color = {
+    color: "#596780"
+}
 
 const NavBar = () => {
     return (
@@ -16,10 +21,10 @@ const NavBar = () => {
                     <h3 className='text-primary fw-bolder'>MORENT</h3>
                 </div>
 
-                <div className='border border-1 border-secondary rounded-pill py-1 px-3 ms-5 d-lg-flex d-none'>
-                    <a href="#"><RiSearchLine size="25px" /></a>
-                    <input type="text" className='border-0 px-5 py-1' placeholder='Search something here' />
-                    <a href="#">< PiSlidersHorizontalThin size="25px" /></a>
+                <div className='border border-1 border-secondary rounded-pill py-1 px-3 ms-5 d-lg-flex d-none form-control align-content-center'>
+                    <button className='align-content-center border-0 bg-white'><RiSearchLine size="25px"  style={color}/></button>
+                    <input type="text" className='form-control border-0 py-1 pe-5' placeholder='Search something here' />
+                    <Filter style={color } />
                 </div>
             </div>
 
