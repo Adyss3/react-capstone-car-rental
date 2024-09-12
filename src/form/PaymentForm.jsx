@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
-import visa from "../assets/Visa.png"
-import bitCoin from "../assets/Bitcoin.png"
-import payPal from "../assets/PayPal.png"
+
 
 
 const PaymentForm = () => {
@@ -27,7 +25,7 @@ const PaymentForm = () => {
           <input type="radio" id='creditCard' name='paymentMethod' value="creditCard" checked={paymentInfoData === "creditCard"} onChange={handlePaymentChange} className='px-2' />
           <label htmlFor="creditCard" className='px-2 fw-bold '>
             Credit Card
-            <img src={visa} alt="" className='visa-spread' />
+            <img src={"/assets/Visa.png"} alt="" className='visa-spread' />
           </label>
 
           {paymentInfoData === 'creditCard' && (
@@ -75,7 +73,7 @@ const PaymentForm = () => {
 
             <label htmlFor="paypal" className='px-2 fw-bold'>
               PayPal
-              <img src={payPal} alt="" className='paypal-spread' />
+              <img src={"/assets/PayPal.png"} alt="" className='paypal-spread' />
             </label>
 
             <div className=''>
@@ -105,7 +103,7 @@ const PaymentForm = () => {
             />
             <label htmlFor="bitcoin" className='px-2 fw-bold'>
               Bitcoin
-              <img src={bitCoin} alt="" className='bitcoin-spread' />
+              <img src={"/assets/Bitcoin.png"} alt="" className='bitcoin-spread' />
             </label>
           </div>
         </form>

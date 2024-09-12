@@ -4,7 +4,6 @@ import Billing from "../form/Billing"
 import RentalInfo from '../form/RentalInfo'
 import PaymentForm from "../form/PaymentForm"
 import Cart from "../components/Cart"
-import Secure from "../assets/secure img.png"
 import Footer from "../components/Footer"
 import { useParams } from 'react-router-dom';
 
@@ -88,7 +87,7 @@ const Payment = () => {
                   Rent Now
                 </button>
                 <div className='py-3'>
-                  <img src={Secure} alt="" />
+                  <img src={"/public/assets/secure img.png"} alt="" />
                 </div>
                 <div>
                   <p className='fw bold'>All your data are safe</p>

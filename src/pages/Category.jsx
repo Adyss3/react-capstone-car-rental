@@ -50,7 +50,7 @@ const Category = () => {
               {
                 productData && productData.slice(0, 9).map((p, i) => (
                   <div className="col-lg-4  pb-4 px-4" key={i}>
-                    <ShopCard cardData={p} />
+                    <ShopCard cardData={p}/>
                   </div>
                 ))
               }

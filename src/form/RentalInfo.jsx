@@ -1,5 +1,4 @@
 import React from 'react'
-import mark from "../assets/mark.png"
 
 const RentalInfo = () => {
     return (
@@ -11,7 +10,7 @@ const RentalInfo = () => {
                     <small>Step  of 4</small>
                 </div>
             </div>
-            <div className=""><img src={mark} alt="" className='pe-2 py-3' />Pick Up</div>
+            <div className=""><img src={"/assets/mark.png"} alt="" className='pe-2 py-3' />Pick Up</div>
             <div className="">
                 <div className="row py-3">
                     <div className="col-md-6 ">
@@ -64,7 +63,7 @@ const RentalInfo = () => {
 
 
             </div>
-            <div className=""><img src={mark} alt="" className='pe-2 py-3' />Drop Off</div>
+            <div className=""><img src={"/assets/mark.png"} alt="" className='pe-2 py-3' />Drop Off</div>
             <div className="">
                 <div className="row py-3">
                     <div className="col-md-6 ">

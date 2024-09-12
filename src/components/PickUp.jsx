@@ -1,12 +1,11 @@
 import React from 'react'
-import mark from "../assets/mark.png"
 
 
 const PickUp = ({ locationType }) => {
     return (
         <div className='px-3'>
 
-            <div className=""><img src={mark} alt="" className='pe-2' />{locationType}</div>
+            <div className=""><img src={"/assets/mark.png"} alt="" className='pe-2' />{locationType}</div>
             <div className="d-flex justify-content-between ">
                 <div>
                     <label htmlFor="" className='fw-bolder fs-6'>Location</label>

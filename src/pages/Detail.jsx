@@ -1,16 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import NavBar from '../components/NavBar'
 import SideBar from '../components/SideBar'
-import Card from '../components/Card'
-import porsche from "../assets/porsche.png"
-import SmallerPorsche from "../assets/smaller porsche.png"
-import carInterior from "../assets/car interior.png"
-import carInterior2 from "../assets/car interior 2.png"
 import { TiStarOutline } from "react-icons/ti"
 import { IoHeart, IoHeartOutline } from "react-icons/io5"
 import { TiStarFullOutline } from "react-icons/ti"
-import profpic from "../assets/Profil.png"
-import profpic2 from "../assets/Profil2.png"
 import ShopCard from "../components/ShopCard"
 import { IoIosArrowDown } from "react-icons/io";
 import Footer from "../components/Footer"
@@ -29,8 +22,7 @@ const Detail = () => {
 
   const params = useParams();
   const singleData = productData && productData.length > 0 && productData.find(p => String(p.productId) === params.id)
-  console.log("singledata:", singleData)
-  console.log("singledata:", productData)
+  
 
   useEffect(() => {
     fetch("/data.json").then(res => res.json()).then(data => setProductData(data)).catch(err => console.log(err))
@@ -71,8 +63,8 @@ const Detail = () => {
 
                       </div>
                     </div>
-                    <img src={carInterior} alt="" className='w-25' />
-                    <img src={carInterior2} alt="" className='w-25' />
+                    <img src={"/assets/car interior.png"} alt="" className='w-25' />
+                    <img src={"/assets/car interior 2.png"} alt="" className='w-25' />
                   </div>
                 </div>
                 <div className="col-md-6">
@@ -163,7 +155,7 @@ const Detail = () => {
                   <div>
                     <div className="d-flex">
                       <div>
-                        <img src={profpic} alt="" />
+                        <img src={"/assets/Profil.png"} alt="" />
                       </div>
                       <div className=' container w-100'>
                         <div className="d-flex justify-content-between">
@@ -189,7 +181,7 @@ const Detail = () => {
                     </div>
                     <div className="d-flex">
                       <div>
-                        <img src={profpic2} alt="" />
+                        <img src={"/assets/Profil2.png"} alt="" />
                       </div>
                       <div className=' container w-100'>
                         <div className="d-flex justify-content-between">

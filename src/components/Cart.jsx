@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import SmallerPorsche from "../assets/smaller porsche.png"
 import { TiStarFullOutline, TiStarOutline } from 'react-icons/ti';
 
 

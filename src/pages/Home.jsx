@@ -3,8 +3,6 @@ import NavBar from "../components/NavBar"
 import Section from "../components/Section"
 import Card from "../components/Card"
 import { Link } from "react-router-dom"
-import lambo from "../assets/still porsche.png"
-import porsche from "../assets/porsche.png"
 import PickUp from '../components/PickUp'
 import SwitchIcon from '../components/SwitchIcon'
 import Footer from "../components/Footer"
@@ -37,11 +35,11 @@ const Home = () => {
                     <div className="row">
                         {/* 1ST CARD  */}
                         <div className="col-md-6 py-2">
-                            <Card design="card bg-info rounded-4 pb-4 shadow" cardTitle="The Best Platform  for Car Rental" cardBody="Ease of doing a car rental safely and reliably. Of course at a low price." cardImg={lambo} cardButton="btn btn-primary ms-4 rounded-1" cardBodyDesign='w-50 ps-4  medium-size small-screen-card' cardTitleDesign=' ps-4 pe-2 w-50 big-size small-screen-card' />
+                            <Card design="card bg-info rounded-4 pb-4 shadow" cardTitle="The Best Platform  for Car Rental" cardBody="Ease of doing a car rental safely and reliably. Of course at a low price." cardImg={"/assets/still porsche.png"} cardButton="btn btn-primary ms-4 rounded-1" cardBodyDesign='w-50 ps-4  medium-size small-screen-card' cardTitleDesign=' ps-4 pe-2 w-50 big-size small-screen-card' />
                         </div>
                         {/* 2ND CARD  */}
                         <div className="col-md-6 py-2">
-                            <Card design="card bg-primary rounded-4 pb-2  shadow" cardTitle="Easy way to rent a car at a low price" cardBody="Providing cheap car rental services and safe and comfortable facilities." cardImg={porsche} cardButton="btn btn-info text-white ms-4 rounded-1" cardBodyDesign='w-50 ps-4 medium-size small-screen-card' cardTitleDesign=' ps-4 pe-2 w-50 big-size small-screen-card' />
+                            <Card design="card bg-primary rounded-4 pb-2  shadow" cardTitle="Easy way to rent a car at a low price" cardBody="Providing cheap car rental services and safe and comfortable facilities." cardImg={"/assets/porsche.png"} cardButton="btn btn-info text-white ms-4 rounded-1" cardBodyDesign='w-50 ps-4 medium-size small-screen-card' cardTitleDesign=' ps-4 pe-2 w-50 big-size small-screen-card' />
                         </div>
                     </div>
                 </Section>

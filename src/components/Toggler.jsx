@@ -1,12 +1,10 @@
 import React from 'react'
 import { FaBars } from "react-icons/fa"
 import { RiSearchLine } from "react-icons/ri"
-import { PiSlidersHorizontalThin } from "react-icons/pi"
 import { Link } from 'react-router-dom'
 import { FaHeart } from "react-icons/fa"
 import { FaBell } from "react-icons/fa"
 import { FaGear } from "react-icons/fa6"
-import profile from "../assets/Profil.png"
 import Filter from './Filter'
 
 
@@ -59,7 +57,7 @@ const Toggler = () => {
                         </div>
                         <div className='nav-link align-content-center py-4'>
                             <Link className=' px-2 pt-1 pb-2 ms-3  text-decoration-none'>
-                                <img src={profile} alt="" />
+                                <img src={"/assets/Profil.png"} alt="" />
                                 <span className='fw-bold fs-4 text-black px-2'>PROFILE</span>
                             </Link>
                         </div>

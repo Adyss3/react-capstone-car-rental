@@ -7,7 +7,7 @@
         "carType": "Manual",
         "carSpace": 2,
         "carTankCapacity": 90,
-        "carImg": "../src/assets/smaller lambo.png",
+        "carImg": "/assets/smaller lambo.png",
         "isFavourite": true,
         "sold": 50
 
@@ -20,7 +20,7 @@
         "carType": "Manual",
         "carSpace": 2,
         "carTankCapacity": 80,
-        "carImg": "../src/assets/smaller porsche.png",
+        "carImg": "/assets/smaller porsche.png",
         "count": 70,
         "isFavourite": false,
         "prevPrice": true,
@@ -36,7 +36,7 @@
         "carType": "Manual",
         "carSpace": 4,
         "carTankCapacity": 70,
-        "carImg": "../src/assets/rollsroyce.png",
+        "carImg": "/assets/rollsroyce.png",
         "count": 90,
         "isFavourite": true,
         "sold": 70
@@ -52,7 +52,7 @@
         "carType": "Manual",
         "carSpace": 6,
         "carTankCapacity": 70,
-        "carImg": "../src/assets/allnewrush.png",
+        "carImg": "/assets/allnewrush.png",
         "count": 60,
         "sold": 50,
         "isFavourite": false
@@ -66,7 +66,7 @@
         "carType": "Manual",
         "carSpace": 6,
         "carTankCapacity": 80,
-        "carImg": "../src/assets/cr-v.png",
+        "carImg": "/public/assets/cr-v.png",
         "count": 90,
         "sold": 20,
         "isFavourite": true
@@ -80,7 +80,7 @@
         "carType": "Manual",
         "carSpace": 6,
         "carTankCapacity": 90,
-        "carImg": "../src/assets/allnewterios.png",
+        "carImg": "/assets/allnewterios.png",
         "count": 50,
         "sold": 10,
         "isFavourite": false
@@ -94,7 +94,7 @@
         "carType": "Manual",
         "carSpace": 6,
         "carTankCapacity": 80,
-        "carImg": "../src/assets/cr-v black.png",
+        "carImg": "/assets/cr-v black.png",
         "count": 90,
         "sold": 20,
         "isFavourite": true
@@ -110,7 +110,7 @@
         "carType": "Manual",
         "carSpace": 4,
         "carTankCapacity": 70,
-        "carImg": "../src/assets/mg xz exclusice.png",
+        "carImg": "/assets/mg xz exclusice.png",
         "count": 40,
         "sold": 20,
         "isFavourite": true
@@ -124,7 +124,7 @@
         "carType": "Manual",
         "carSpace": 6,
         "carTankCapacity": 80,
-        "carImg": "../src/assets/mg zs.png",
+        "carImg": "/assets/mg zs.png",
         "count": 30,
         "sold": 40,
         "isFavourite": false
@@ -140,7 +140,7 @@
         "carType": "Manual",
         "carSpace": 4,
         "carTankCapacity": 90,
-        "carImg": "../src/assets/mg xz exclusice.png",
+        "carImg": "/assets/mg xz exclusice.png",
         "count": 40,
         "sold": 20,
         "isFavourite": true
@@ -154,7 +154,7 @@
         "carType": "Manual",
         "carSpace": 6,
         "carTankCapacity": 80,
-        "carImg": "../src/assets/mg zs.png",
+        "carImg": "/assets/mg zs.png",
         "count": 30,
         "sold": 40,
         "isFavourite": false
